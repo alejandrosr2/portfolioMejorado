@@ -1,0 +1,8 @@
+@media (min-width: 1024px) {
+  #root {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
