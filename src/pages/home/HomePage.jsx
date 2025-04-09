@@ -16,17 +16,17 @@ const proyectos = [
   {
     img: proyecto,
     title: "CoinObs",
-    shortDesc: "Consulta criptomonedas y tu portfolio",
+    shortDesc: "Creado con JavaScript, React y Tailwind. App para consultar datos en tiempo real, poder guardar y comparar activos además de calcular el balance y el rendimiento durante el tiempo.",
   },
   {
     img: proyecto2,
     title: "Planify",
-    shortDesc: "Organiza tus tareas y compromisos",
+    shortDesc: "Creado con JavaScript, React y Tailwind. App para organizar los horarios de tu semana además de añadir tareas y compromisos importantes.",
   },
   {
     img: proyecto3,
     title: "GalleryMood",
-    shortDesc: "Cambia la temática de la web segun la foto",
+    shortDesc: "Creado con JavaScript, React y Tailwind. App que cambia el tema según el color predominante de la foto seleccionada.",
   },
 ];
 
@@ -62,17 +62,13 @@ const HomePage = () => {
           <div className="flex border justify-center border-zinc-400 bg-bgColor rounded-lg mb-4">
             <Link to={"/about"}>
               <div className="flex items-center gap-4 p-6 hover:scale-95 duration-500 cursor-pointer">
-                <div>
-                  <span className="relative inline-flex overflow-hidden rounded-full w-full p-[1px]">
-                    {/* Borde animado */}
-                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51A7E8_0%,#1A4E8C_50%,#51A7E8_100%)]"></span>
-                      <img
-                        src={yo}
-                        alt="Yo"
-                        className="relative w-16 h-16 object-cover rounded-full border border-zinc-400"
-                      />
-                  </span>
-                </div>
+                <AnimatedBorder width="" variant="blue">
+                  <img
+                    src={yo}
+                    alt="Yo"
+                    className="relative w-16 h-16 object-cover rounded-full"
+                  />
+                </AnimatedBorder>
                 <p className="text-2xl lg:text-3xl font-semibold ">
                   Hola, soy Alejandro
                 </p>
@@ -88,15 +84,17 @@ const HomePage = () => {
           </div>
         </div>
         <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="relative h-full w-full rounded-lg overflow-hidden group transition-all duration-500 border border-zinc-400 aspect-[4/3]  bg-bgColor">
-          <img
-            src={proyectos[currentIndex].img}
-            alt={proyectos[currentIndex].title}
-            className="w-full  h-full  object-center rounded-lg transition-opacity duration-500 group-hover:opacity-50"
-          />
-          {/* Overlay al hacer hover */}
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p className="text-white text-center px-4">{proyectos[currentIndex].shortDesc}</p>
-          </div>
+          <Link to="/projects">
+            <img
+              src={proyectos[currentIndex].img}
+              alt={proyectos[currentIndex].title}
+              className="w-full  h-full  object-center rounded-lg transition-opacity duration-500 group-hover:opacity-50"
+            />
+            {/* Overlay al hacer hover */}
+            <div className="absolute inset-0 flex items-center justify-center bg-bgColor bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <p className="text-white px-16">{proyectos[currentIndex].shortDesc}</p>
+            </div>
+          </Link>
         </div>
       </div>
       {/* Bloque 2 */}

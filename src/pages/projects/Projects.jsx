@@ -12,7 +12,7 @@ const proyects = [
     "techs": ["JavaScript", "React", "Tailwind"], 
     "href": "https://coinobs.vercel.app/", 
     "hrefCode": "https://github.com/alejandrosr2/coinobs", 
-    "description": "Aplicación que muestra información en tiempo real consumiendo una API. Permite guardar activos en diferentes listas, ver el balance y evolución histórica de los activos seleccionados, compararlos y tiene una calculadora para calcular el riesgo en una posición de un trade. Usa un contexto para filtrar activos en el dashboard y es totalmente responsive." 
+    "description": "Aplicación que muestra información en tiempo real consumiendo una API. Permite guardar activos en diferentes listas, ver el balance y evolución histórica de los activos seleccionados, compararlos y tiene una calculadora de posición para hacer compras o ventas. Usa un contexto para filtrar activos en el dashboard y es totalmente responsive." 
   },
   { 
     "img": proyecto2, 
@@ -48,14 +48,14 @@ const Projects = () => {
           return (
             <div 
               key={i} 
-              className="lg:w-[32%] cursor-pointer min-h-[220px]" 
-              onClick={() => handleProjectSelect(proyect)} 
+              className="lg:w-[32%]  min-h-[220px]" 
             >
               <h2 className="text-center font-semibold pb-1">{proyect.title}</h2>
               <img 
                 src={proyect.img} 
-                alt={proyect.title} 
-                className="rounded-lg border border-zinc-400 w-full aspect-[4/3] object-cover" 
+                alt={proyect.title}
+                onClick={() => handleProjectSelect(proyect)} 
+                className="rounded-lg border border-zinc-400 w-full aspect-[4/3] object-cover cursor-pointer" 
               />
               <div className="flex justify-center gap-6 mt-2">
                 <a 
@@ -78,7 +78,7 @@ const Projects = () => {
         })}
       </div>   
       <div 
-        className={`mt-[70px] font-semibold  ${selectedProject === null ?"text-center" : ""}`}>
+        className={`mt-[50px] lg:mt-[70px] font-semibold  ${selectedProject === null ?"text-center" : ""}`}>
         {selectedProject === null ? (
           <p className="bg-bgColor bg-opacity-50 p-2 rounded-lg ">Selecciona un proyecto</p>
         ) : (
