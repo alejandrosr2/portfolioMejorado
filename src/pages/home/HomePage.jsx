@@ -7,7 +7,7 @@ import tailwind from "../../assets/tailwindcss.svg"
 import react from "../../assets/react2.svg"
 import proyecto from "../../assets/proyectoCoin2.png";
 import proyecto2 from "../../assets/proyectoDiario2.png";
-import proyecto3 from "../../assets/proyectoGallery.png";
+import proyecto3 from "../../assets/proyectoGallery2.png";
 import { useEffect, useState } from "react"
 import { Check, CornerDownRight, FileText, Github, Linkedin, Mail } from "lucide-react";
 import AnimatedBorder from "../../components/animatedBorder/AnimatedBorder"
@@ -91,7 +91,7 @@ const HomePage = () => {
           <img
             src={proyectos[currentIndex].img}
             alt={proyectos[currentIndex].title}
-            className=" w-full h-full object-cover object-center rounded-lg transition-opacity duration-500 group-hover:opacity-50"
+            className="w-full  h-full  object-center rounded-lg transition-opacity duration-500 group-hover:opacity-50"
           />
           {/* Overlay al hacer hover */}
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -123,7 +123,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="flex items-center justify-center w-full mb-4 lg:mb-0">
-            <AnimatedBorder variant="sonar" animationSpeed="6s" padding="p-1">
+            <AnimatedBorder variant="sonar" animationSpeed="6s" padding="p-1" paddingEffect="p-[2px]">
               <p className="text-center">Disponible para trabajar</p>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </AnimatedBorder>

@@ -17,12 +17,13 @@ const gradients = {
     borderColor = "border-zinc-400",
     backgroundColor = "bg-bgColor",
     width = "w-full",
-    padding = ""
+    padding = "",
+    paddingEffect = "p-[1px]"
   }) => {
     const gradientClass = gradients[variant] || gradients.emerald;
   
     return (
-      <span className={`relative inline-flex overflow-hidden p-[1px] ${width} ${rounded} ${className}`}>
+      <span className={`relative inline-flex overflow-hidden ${paddingEffect} ${width} ${rounded} ${className}`}>
         <span
           className={`absolute inset-[-1000%] animate-spin ${gradientClass}`}
           style={{ animationDuration: animationSpeed }}
