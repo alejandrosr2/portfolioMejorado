@@ -41,7 +41,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div className="pb-16">
       <h1 className="border-b-2 border-zinc-400 pb-1 text-lg font-semibold">Proyectos</h1>
       <div className="pt-10 grid grid-cols-2 lg:flex lg:justify-between gap-2">
         {proyects.map((proyect, i) => {
@@ -63,7 +63,7 @@ const Projects = () => {
                   target="_blank" rel="noopener noreferrer" 
                   className="text-center rounded-lg p-2 bg-bgColor bg-opacity-50 duration-300 flex gap-1 border border-bgColor"
                 >
-                    Visita la web
+                  Web
                 </a>
                 <a 
                   href={proyect.hrefCode} 
@@ -92,7 +92,7 @@ const Projects = () => {
                   ))}
               </ul>
             </div>   
-            <div className="bg-bgColor bg-opacity-50 p-2 rounded-lg ">
+            <div className="bg-bgColor bg-opacity-50 p-2 rounded-lg">
               <p className="">{selectedProject.description}</p>
             </div>
           </div>

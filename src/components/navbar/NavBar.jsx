@@ -22,7 +22,7 @@ const NavBar = () => {
 
     return (
         <div className="">
-            <nav className="fixed bottom-0 left-0 right-0 z-40 dark:bg-bgColor border-t border-b border-zinc-400 py-2">
+            <nav className="fixed bottom-0 left-0 right-0 z-40 bg-bgColor border-t border-b border-zinc-400 py-2">
                 <ul className="flex items-center justify-between mx-auto max-w-screen-lg px-4">
                     {navLnks.map((lnk, i) => (
                         <Link to={lnk.href} key={i}>
