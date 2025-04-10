@@ -78,7 +78,7 @@ const HomePage = () => {
           <div className="flex-1 h-full flex items-center justify-center p-4 border rounded-lg border-zinc-400 bg-bgColor  ">
             <div className="font-semibold">
               <p className="p-3 text-lg">
-                Hola, me llamo Alejandro y soy un desarrollador front end junior. Estoy especializado en <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Tailwind</strong> y <strong>React</strong>. He realizado un bootcamp y varios cursos que me han  ayudado en mi formación. Desde hace más de un año estoy haciendo proyectos propios sin parar con la finalidad de afianzar mis conocimientos, mejorar mis fallos y ver donde tenía que poner mi empeño en mejorar. Por fin puedo decir a día de hoy que me siento preparado para aportar grandes cosas de valor en un entorno de trabajo. Si quieres saber más sobre mí, haz click <Link to={"/about"}><span className="font-bold cursor-pointer italic underline">aquí.</span></Link>
+                Soy un desarrollador frontend junior. Estoy especializado en <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Tailwind</strong> y <strong>React</strong>. He realizado un bootcamp y varios cursos que me han  ayudado en mi formación. Desde hace más de un año estoy haciendo proyectos propios sin parar con la finalidad de afianzar mis conocimientos, mejorar mis fallos y ver donde tenía que poner mi empeño en mejorar. Por fin puedo decir a día de hoy que me siento preparado para aportar grandes cosas de valor en un entorno de trabajo. Si quieres saber más sobre mí, haz click <Link to={"/about"}><span className="font-bold cursor-pointer italic underline">aquí.</span></Link>
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ const HomePage = () => {
           <div className="flex-1 mb-4 lg:mb-2 flex items-center justify-center p-4 border rounded-lg border-zinc-400 bg-bgColor">
             <div className="text-xl font-semibold">
               <p>Junior</p>
-              <p>Front End</p>
+              <p>Frontend</p>
               <p>Developer</p>
             </div>
           </div>
@@ -139,13 +139,13 @@ const HomePage = () => {
                   {copied && <span className="flex items-center justify-center transition-all duration-300">¡Copiado!<Check className="size-4"/></span>}
               </li>
               <li>
-                  <a href="https://github.com/alejandrosr2" className="hover:text-zinc-500 hover:scale-105 duration-300 flex font-semibold gap-5"><Github />GitHub</a>
+                  <a href="https://github.com/alejandrosr2" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-500 hover:scale-105 duration-300 flex font-semibold gap-5"><Github />GitHub</a>
               </li>
               <li>
-                  <a href="https://www.linkedin.com/in/alejandro-soler-rond%C3%A1n-10587b299/" className="hover:text-zinc-500 hover:scale-105 duration-300 flex font-semibold gap-5"><Linkedin />Linkedin</a>
+                  <a href="https://www.linkedin.com/in/alejandro-soler-rond%C3%A1n-10587b299/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-500 hover:scale-105 duration-300 flex font-semibold gap-5"><Linkedin />Linkedin</a>
               </li>
               <li>
-                  <a href="https://github.com/alejandrosr2/curriculum/blob/main/CurriculumAlejandroSolerRondan.pdf" className="hover:text-zinc-500 hover:scale-105 duration-300 flex font-semibold gap-5"><FileText/>Currículum</a>
+                  <a href="https://github.com/alejandrosr2/curriculum/blob/main/CurriculumAlejandroSolerRondan.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-500 hover:scale-105 duration-300 flex font-semibold gap-5"><FileText/>Currículum</a>
               </li>
             </ul>
           </div>
