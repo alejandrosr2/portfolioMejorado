@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="mb-12 lg:mb-0">
       <h1 className="border-b-2 border-zinc-400 pb-1 text-xl font-semibold">Sobre mí</h1>
-      <div className="lg:flex lg:items-start lg:gap-8 border border-bgColor bg-bgColor p-4 bg-opacity-60 rounded-lg mt-10 ">
+      <div className="lg:flex lg:items-start lg:gap-8   p-4 bg-opacity-60 rounded-lg mt-10 ">
         <div className=" space-y-4">
           <p>
             Hola, me llamo Alejandro y siempre me han gustado dos cosas: la economía y la programación. Decidí hacer el grado de economía en la universidad y al cabo de los años empecé a mirar cosas sobre programación por curiosidad. Cuantas más cosas iba aprendiendo, más me iba gustando, hasta que al final tomé la decisión de invertir todos mis recursos en formarme para poder dedicarme a esto, realizando un bootcamp en desarrollo frontend y varios cursos más.
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
         <div className="">
-          <AnimatedBorder rounded="rounded-lg" variant="blue" paddingEffect="p-[2px]">
+          <AnimatedBorder rounded="rounded-lg" variant="blue" paddingEffect="p-[2px]" animationSpeed="8s">
             <img
               src={yo}
               alt="Foto personal"

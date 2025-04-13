@@ -78,7 +78,7 @@ const HomePage = () => {
           <div className="flex-1 h-full flex items-center justify-center p-4 border rounded-lg border-zinc-400 bg-bgColor  ">
             <div className="font-semibold">
               <p className="p-3 text-lg">
-                Soy un desarrollador frontend junior. Estoy especializado en <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Tailwind</strong> y <strong>React</strong>. He realizado un bootcamp y varios cursos que me han  ayudado en mi formación. Desde hace más de un año estoy haciendo proyectos propios sin parar con la finalidad de afianzar mis conocimientos, mejorar mis fallos y ver donde tenía que poner mi empeño en mejorar. Por fin puedo decir a día de hoy que me siento preparado para aportar grandes cosas de valor en un entorno de trabajo. Si quieres saber más sobre mí, haz click <Link to={"/about"}><span className="font-bold cursor-pointer italic underline">aquí.</span></Link>
+                Soy un desarrollador frontend junior. Estoy especializado en <strong className="italic">HTML</strong>, <strong className="italic">CSS</strong>, <strong className="italic">JavaScript</strong>, <strong className="italic">Tailwind</strong> y <strong className="italic">React</strong>. He realizado un bootcamp y varios cursos que me han  ayudado en mi formación. Desde hace más de un año estoy haciendo proyectos propios sin parar con la finalidad de afianzar mis conocimientos, mejorar mis fallos y ver donde tenía que poner mi empeño en mejorar. Por fin puedo decir a día de hoy que me siento preparado para aportar grandes cosas de valor en un entorno de trabajo. Si quieres saber más sobre mí, haz click <Link to={"/about"}><span className="font-bold cursor-pointer italic underline">aquí.</span></Link>
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ const HomePage = () => {
             <img
               src={proyectos[currentIndex].img}
               alt={proyectos[currentIndex].title}
-              className="w-full  h-full  object-center rounded-lg transition-opacity duration-500 group-hover:opacity-50"
+              className="w-full h-full scale-90  object-center rounded-lg transition-opacity duration-500 group-hover:opacity-50 drop-shadow-[0_0_20px_hsl(0,0%,50%)] border border-zinc-400"
             />
             {/* Overlay al hacer hover */}
             <div className="absolute inset-0 flex items-center justify-center bg-bgColor bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -121,7 +121,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="flex items-center justify-center w-full mb-4 lg:mb-0">
-            <AnimatedBorder variant="sonar" animationSpeed="6s" padding="p-1" paddingEffect="p-[2px]">
+            <AnimatedBorder variant="sonar" animationSpeed="4s" padding="p-1" paddingEffect="p-[2px]">
               <p className="text-center">Disponible para trabajar</p>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </AnimatedBorder>
@@ -168,4 +168,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-
